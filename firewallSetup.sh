@@ -38,3 +38,5 @@ iptables -A INPUT -p TCP -j DROP
 iptables -A FORWARD -p TCP -j DROP
 iptables -A OUTPUT -p TCP -j DROP
 
+echo "I was still able to connect because I gave my VM a local IP address (192.168.0.5)."
+
