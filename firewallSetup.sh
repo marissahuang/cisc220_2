@@ -4,11 +4,11 @@ iptables -F OUTPUT
 iptables -F FORWARD
 
 # Enable SSH from 130.15.0.0-130.15.255.255 & any private IP
-iptables -A INPUT -s 130.15.0.0.0/16 -p TCP --dport 22 -j ACCEPT
+iptables -A INPUT -s 130.15.0.0/16 -p TCP --dport 22 -j ACCEPT
 iptables -A INPUT -s 10.0.0.0/8 -p TCP --dport 22 -j ACCEPT
 iptables -A INPUT -s 172.16.0.0/12 -p TCP --dport 22 -j ACCEPT
 iptables -A INPUT -s 192.168.0.0/16 -p TCP --dport 22 -j ACCEPT
-iptables -A OUTPUT -s 130.15.0.0.0/16 -p TCP --dport 22 -j ACCEPT
+iptables -A OUTPUT -s 130.15.0.0/16 -p TCP --dport 22 -j ACCEPT
 iptables -A OUTPUT -s 10.0.0.0/8 -p TCP --dport 22 -j ACCEPT
 iptables -A OUTPUT -s 172.16.0.0/12 -p TCP --dport 22 -j ACCEPT
 iptables -A OUTPUT -s 192.168.0.0/16 -p TCP --dport 22 -j ACCEPT
